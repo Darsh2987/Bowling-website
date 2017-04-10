@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url(../images/bowling-bg-2.jpg);
+  background-size:;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.section {
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  right: ;
+  bottom: 50px;
+  margin: 0 auto;
+}
+
+p {
+  color: #fff;
+  position: relative;
+  bottom: 200px;
+  background-color: blue;
+  margin: 0 auto;
+  width: 40%;
+  float: left;
+}
+
+
+.make-booking-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.make-booking-container {
+  width: 600px;
+  height: 400px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px inset #fff;
+}
+
+.make-booking {
+  width: 450px;
+
+}
+
+.number-of-bowlers, .number-of-games {
+  margin: 2rem;
+  padding: 1rem 1rem 1.4rem 1rem;
+  background-color: rgba(250, 250, 250, .1);
+  color: #fff;
+}
+
+label {
+  position: relative;
+  top: 4px;
+}
+
+select {
+  float: right;
+  margin-left: 1.5rem;
+  padding-left: .5rem;
+  width: 60px;
+  height: 25px;
+}
+
+.btn {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #000;
+  width: 385px;
+  height: 45px;
+  margin-left: 2rem;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -0-appearance: none;
+  -ms-appearance: none;
+  appearence: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.booking-info {
+  height: 60px;
+  margin: 2rem;
+  color: #fff;
+}
