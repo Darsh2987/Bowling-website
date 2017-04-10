@@ -1,5 +1,15 @@
 .bowling-icon {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, .7);
   width: 100%;
   height: 100px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+
+.bowling-icon__home-btn {
+  width: 50px;
+  position: relative;
+  top: 30px;
+  left: 30px;
 }

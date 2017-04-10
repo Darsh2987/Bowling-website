@@ -1,0 +1,250 @@
+
+html {
+  background-image: url("/assets/images/bowling-bg-2.jpg");
+  background-size:;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes slider {
+
+  0% {
+  	left: 0;
+  }
+
+  20% {
+  	left: 0;
+  }
+
+  25% {
+  	left: -100%;
+  }
+
+  45% {
+    left: -100%;
+
+  }
+
+  50% {
+  	left: -200%;
+
+  }
+
+  70% {
+  	left: -200%;
+  }
+
+  75% {
+  	left: -300%;
+  }
+
+  95% {
+  	left: -300%;
+  }
+
+  100% {
+  	left: -400%;
+
+  }
+}
+
+@keyframes slider {
+
+  0% {
+  	left: 0;
+  }
+
+  20% {
+  	left: 0;
+  }
+
+  25% {
+  	left: -100%;
+  }
+
+  45% {
+    left: -100%;
+
+  }
+
+  50% {
+  	left: -200%;
+
+  }
+
+  70% {
+  	left: -200%;
+  }
+
+  75% {
+  	left: -300%;
+  }
+
+  95% {
+  	left: -300%;
+  }
+
+  100% {
+  	left: -400%;
+
+  }
+}
+
+.top-image-slider {
+  overflow: hidden;
+  position: relative;
+  border-bottom: 5px solid #fff;
+}
+
+.slides {
+  width: 500%;
+  position: relative;
+	margin: 0;
+	left: 0;
+  -webkit-animation: 20s slider infinite;
+          animation: 20s slider infinite;
+}
+
+.slide {
+  width: 20%;
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.cosmic-bowling {
+  background-image: url("/assets/images/cosmic-bowling.jpg");
+}
+
+.bowling-balls {
+  background-image: url("/assets/images/bowling-balls.jpg");
+}
+
+.bowling-bar {
+  background-image: url("/assets/images/bowling-bar.jpg");
+}
+
+.bowling-pins {
+  background-image: url("/assets/images/bowling-pins.jpeg");
+}
+
+.bowling-icon {
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+
+.bowling-icon__home-btn {
+  width: 50px;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.make-booking-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  visibility: hidden;
+}
+
+.make-booking-container {
+  width: 600px;
+  height: 400px;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px inset #fff;
+}
+
+.make-booking {
+  width: 450px;
+
+}
+
+.number-of-bowlers, .number-of-games {
+  margin: 2rem;
+  padding: 1rem 1rem 1.4rem 1rem;
+  background-color: rgba(250, 250, 250, .1);
+  color: #fff;
+}
+
+label {
+  position: relative;
+  top: 4px;
+}
+
+select {
+  float: right;
+  margin-left: 1.5rem;
+  padding-left: .5rem;
+  width: 60px;
+  height: 25px;
+}
+
+.btn {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #000;
+  width: 385px;
+  height: 45px;
+  margin-left: 2rem;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -0-appearance: none;
+  -ms-appearance: none;
+  appearence: none;
+  border-radius: 0px;
+}
+
+.booking-info {
+  height: 60px;
+  margin: 2rem;
+  color: #fff;
+}
+
+.section {
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  right: ;
+  bottom: 50px;
+  margin: 0 auto;
+}

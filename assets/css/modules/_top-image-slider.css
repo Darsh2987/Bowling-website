@@ -64,17 +64,17 @@
 }
 
 .cosmic-bowling {
-  background-image: url("../images/cosmic-bowling.jpg");
+  background-image: url("/assets/images/cosmic-bowling.jpg");
 }
 
 .bowling-balls {
-  background-image: url("../images/bowling-balls.jpg");
+  background-image: url("/assets/images/bowling-balls.jpg");
 }
 
 .bowling-bar {
-  background-image: url("../images/bowling-bar.jpg");
+  background-image: url("/assets/images/bowling-bar.jpg");
 }
 
 .bowling-pins {
-  background-image: url("../images/bowling-pins.jpeg");
+  background-image: url("/assets/images/bowling-pins.jpeg");
 }
