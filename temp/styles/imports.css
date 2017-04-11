@@ -1,6 +1,6 @@
 
 html {
-  background-image: url("/assets/images/bowling-bg-2.jpg");
+  background-image: url("../../assets/images/bowling-bg-2.jpg");
   background-size:;
   background-repeat: repeat;
   background-position: center;
@@ -8,7 +8,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #333;
+  color: #fff;
 }
 
 * {
@@ -104,7 +104,6 @@ body {
 .top-image-slider {
   overflow: hidden;
   position: relative;
-  border-bottom: 5px solid #fff;
 }
 
 .slides {
@@ -126,35 +125,63 @@ body {
 }
 
 .cosmic-bowling {
-  background-image: url("/assets/images/cosmic-bowling.jpg");
+  background-image: url("../../assets/images/cosmic-bowling.jpg");
 }
 
 .bowling-balls {
-  background-image: url("/assets/images/bowling-balls.jpg");
+  background-image: url("../../assets/images/bowling-balls.jpg");
 }
 
 .bowling-bar {
-  background-image: url("/assets/images/bowling-bar.jpg");
+  background-image: url("../../assets/images/bowling-bar.jpg");
 }
 
 .bowling-pins {
-  background-image: url("/assets/images/bowling-pins.jpeg");
+  background-image: url("../../assets/images/bowling-pins.jpeg");
 }
 
-.bowling-icon {
+.header-bar {
   background-color: rgba(0, 0, 0, .7);
   width: 100%;
-  height: 100px;
+  height: 70px;
   position: absolute;
-  top: 25px;
+  top: 20px;
   left: 0;
 }
 
 .bowling-icon__home-btn {
   width: 50px;
   position: relative;
-  top: 30px;
-  left: 30px;
+  top: 15px;
+  left: 15px;
+}
+
+.header-main {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin: 0 5%;
+  width: 90%;
+  background-color: rgba(0, 0, 0, .7);
+  position: absolute;
+  bottom: 50px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+h1 {
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.book-now {
+  font-size: 1.5rem;
+  font-weight: 300;
+  background-color: rgba(228, 13, 11, .8);
+  display: inline-block;
+  padding: 1rem;
+  text-shadow: 1px 1px 10px #000;
+  border-radius: 10px;
 }
 
 .make-booking-modal {
@@ -238,13 +265,122 @@ select {
   color: #fff;
 }
 
-.section {
-  width: 600px;
-  height: 600px;
-  background-color: #fff;
-  border-radius: 50%;
+.special-offer {
+  width: 90%;
+  height: auto;
+  margin: 1rem auto;
+}
+
+.special-offer__title {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.special-offer__block {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.special-offer__festival {
+  background-image: url("../../assets/images/halloween.jpg");
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 15px;
+  border: 1px solid #f4730b;
+  box-shadow: 5px 5px 5px rgba(250, 250, 250, .2);
+}
+
+.special-offer__festival-headings {
+  display: inline-block;
+  font-family: 'Jolly Lodger', cursive;
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(243, 114, 12, .9);
+  letter-spacing: 1px;
   position: relative;
-  right: ;
-  bottom: 50px;
+  top: 60px;
+  left: 20px;
+  font-size: 2rem;
+}
+
+.special-offer__festival h2 {
+  font-size: 3.5rem;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  display: inline-block;
+}
+
+.special-offer__festival h3 {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.special-offer__festival h4 {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  top: 60px;
+  left: 50px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.special-offer__kings-offer {
+  background-image: url("../../assets/images/crown2.jpg");
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 5px 5px 5px rgba(250, 250, 250, .2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.special-offer__kings-offer-headings-wrapper {
+  font-family: 'Lobster Two', cursive;
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
   margin: 0 auto;
+  padding: 1rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px rgb(255, 231, 89);
+  border-radius: 10px;
+}
+
+.special-offer__kings-offer h2 {
+  font-size: 2.3rem;
+  padding-bottom: 3rem;
+}
+
+.kings {
+  position: relative;
+  top: 40px;
+  right: 45px;
+}
+
+.offer {
+  position: relative;
+  top: 40px;
+  left: 100px;
+}
+
+.special-offer__kings-offer h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.special-offer__kings-offer h4 {
+  font-size: 1.2rem;
+  text-align: center;
+
+}
+
+.special-offer__kings-offer h5 {
+  padding-top: .9rem;
 }

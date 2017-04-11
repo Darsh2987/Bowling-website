@@ -7,6 +7,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />
 
       <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+      <link href="https://fonts.googleapis.com/css?family=Jolly+Lodger&amp;subset=latin-ext" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,400i,700,700i" rel="stylesheet">
 
       <title>Strike Tenpin Bowling</title>
 
@@ -16,27 +18,62 @@
 
     <body>
 
-      <div class="top-image-slider">
-        <div class="slides">
-          <div class="slide cosmic-bowling"></div>
-          <div class="slide bowling-balls"></div>
-          <div class="slide bowling-bar"></div>
-          <div class="slide bowling-pins"></div>
-          <div class="slide cosmic-bowling"></div>
+      <!-- Markup for background image slider with top header bar and main header block -->
+      <section class="slider-header__wrapper">
+        <div class="top-image-slider">
+          <div class="slides">
+            <div class="slide cosmic-bowling"></div>
+            <div class="slide bowling-balls"></div>
+            <div class="slide bowling-bar"></div>
+            <div class="slide bowling-pins"></div>
+            <div class="slide cosmic-bowling"></div>
+          </div>
+
+          <header class="header-bar">
+            <img class="bowling-icon__home-btn" src="assets/images/bowling-icon.png" alt="">
+          </header>
+
+          <header class="header-main">
+            <h1>Strike King Tenpin Bowling</h1>
+            <h2 class="book-now">book now!</h2>
+          </header>
         </div>
-      </div>
+      </section>
+      <!-- End of markup for background image slider with top header bar and main header block -->
 
-      <header class="bowling-icon">
-        <img class="bowling-icon__home-btn" src="assets/images/bowling-icon.png" alt="">
-      </header>
+      <!-- Markup for the "special offers" section -->
+      <section class="special-offer">
+        <h2 class="special-offer__title">SPECIAL OFFERS</h2>
 
-      <div class="section">
-      </div>
+        <div class="special-offer__block special-offer__festival">
+          <h2 class="special-offer__festival-headings">HALLOWEEN</h2>
+          <h3 class="special-offer__festival-headings">SPECIAL OFFER</h3>
+          <h4 class="special-offer__festival-headings">2 games for the price of 1</h4>
+        </div>
+
+        <div class="special-offer__block special-offer__kings-offer">
+          <div class="special-offer__kings-offer-headings-wrapper">
+            <h2>THE <span class="kings">KINGS</span> <span class="offer">OFFER!</span></h2>
+            <h3>UNLIMITED BOWLING - ONLY £15</h3>
+            <h4>WEDNESDAY 7PM - CLOSE</h4>
+            <h5>Terms and conditions apply</h5>
+          </div>
+        </div>
+      </section>
+      <!-- End of markup for the "special offers" section -->
+
+      <section class="party">
+        <h2 class="party__title">PARTY BOOKINGS</h2>
+
+        <div>
+          
+        </div>
+      </section>
 
 
 
       <!-- Markup for the modal "Make Booking" -->
-      <section class="make-booking-modal">
+      <!--<section class="make-booking-modal">
         <div class="make-booking-container">
           <div class="make-booking">
 
@@ -71,11 +108,11 @@
 
           </div>
         </div>
-      </section>
+      </section>-->
       <!-- End of markup for the modal "Make Booking" -->
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-      <script type="text/javascript" src="js/main.js" charset="UTF-8"></script>
+      <script type="text/javascript" src="assets/js/main.js" charset="UTF-8"></script>
     </body>
 
   </html>

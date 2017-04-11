@@ -1,15 +1,43 @@
-.bowling-icon {
+.header-bar {
   background-color: rgba(0, 0, 0, .7);
   width: 100%;
-  height: 100px;
+  height: 70px;
   position: absolute;
-  top: 25px;
+  top: 20px;
   left: 0;
 }
 
 .bowling-icon__home-btn {
   width: 50px;
   position: relative;
-  top: 30px;
-  left: 30px;
+  top: 15px;
+  left: 15px;
+}
+
+.header-main {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin: 0 5%;
+  width: 90%;
+  background-color: rgba(0, 0, 0, .7);
+  position: absolute;
+  bottom: 50px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+h1 {
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.book-now {
+  font-size: 1.5rem;
+  font-weight: 300;
+  background-color: rgba(228, 13, 11, .8);
+  display: inline-block;
+  padding: 1rem;
+  text-shadow: 1px 1px 10px #000;
+  border-radius: 10px;
 }
