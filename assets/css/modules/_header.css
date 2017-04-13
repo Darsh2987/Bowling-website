@@ -2,22 +2,46 @@
   background-color: rgba(0, 0, 0, .7);
   width: 100%;
   height: 70px;
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 0;
+  z-index: 2;
 }
 
 .bowling-icon__home-btn {
-  width: 50px;
+  width: 45px;
   position: relative;
-  top: 15px;
-  left: 15px;
+  top: 16px;
+  left: 20px;
+  float: left;
+}
+
+.nav {
+  cursor: pointer;
+  list-style: none;
+  border: 1px solid red;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 70px;
+  display: none;
+}
+
+.nav--reveal {
+  display: block;
+}
+
+
+.nav li {
+  font-family: 'Passion One', cursive;
+  line-height: 1.9rem;
+  font-size: 1.5rem;
 }
 
 .header-main {
-  font-size: 1.5rem;
   text-align: center;
-  padding: 2.5rem 1rem;
+  padding: 1.5rem 1rem;
   margin: 0 5%;
   width: 90%;
   background-color: rgba(0, 0, 0, .7);
@@ -27,17 +51,92 @@
   border-radius: 10px;
 }
 
-h1 {
+.header-main h1 {
+  font-size: 2rem;
+  letter-spacing: 3px;
   font-weight: 300;
-  margin-bottom: 1.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 2px red;
+  font-family: 'Passion One', cursive;
 }
 
 .book-now {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 300;
-  background-color: rgba(228, 13, 11, .8);
+  background-color: red;
   display: inline-block;
   padding: 1rem;
   text-shadow: 1px 1px 10px #000;
   border-radius: 10px;
 }
+
+.phone-number {
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+
+
+
+/*-------------------------------------------------------*/
+/* Rules for the small screen landscape i.e. smartphones */
+/* Rules for the small screen landscape i.e. smartphones */
+
+@media only screen and (min-width: 415px) and (max-width: 740px) {
+  .header-main {
+    width: 50%;
+    padding: 1rem;
+    margin: 0 25%;
+    bottom: 30px;
+  }
+  .header-main h1 {
+    font-size: 4vw;
+  }
+
+  .book-now {
+    font-size: 2.5vw;
+  }
+}
+
+/* End of rules for the small screen landscape i.e. smartphones */
+/* End of rules for the small screen landscape i.e. smartphones */
+/*--------------------------------------------------------------*/
+
+/*---------------------------------------------------------*/
+/* Rules for medium to large screens i.e. ipads and desktop*/
+/* Rules for medium to large screens i.e. ipads and desktop*/
+
+@media only screen and (min-width: 741px) {
+
+  .nav {
+    list-style: none;
+    float: right;
+    position: relative;
+    top: 25px;
+    right: 60px;
+    width: auto;
+  }
+
+  .nav li {
+    float: left;
+    font-size: 1.2rem;
+    font-family: 'Passion One', cursive;
+    letter-spacing: 1px;
+    margin-left: 1rem;
+    text-shadow: 1px 1px 1px red;
+  }
+
+  .header-main {
+    width: 50%;
+    margin: 0 25%;
+  }
+
+  .header-main h1 {
+    font-size: 3.2rem;
+  }
+
+}
+
+/* Rules for medium to large screens i.e. ipads and desktop*/
+/* Rules for medium to large screens i.e. ipads and desktop*/
+/*---------------------------------------------------------*/

@@ -1,34 +1,11 @@
 
-/*$(function() {
+$(".hamburger-container").click(function() {
+  $(this).toggleClass("open");
+});
 
-  //configuration
-  var width = 100%;
-  var animationSpeed = 800;
-  var pause = 3000;
-  var currentSlide = 1;
-
-  //cache DOM
-  var $slider = $(".top-image-slider");
-  var $sliderContainer = $slider.find(".slides");
-  var $slides = $sliderContainer.find(".slide");
-
-  setInterval(function() {
-    $sliderContainer.animate({"margin-left": "-=" + width}, animationSpeed, function() {
-      currentSlide++;
-      if (currentSlide === $slides.length) {
-        currentSlide = 1;
-        $sliderContainer.css('margin-left', 0);
-      }
-    });
-  }, pause);
-
-
-  //set interval margin-left
-  //if it's the last slide, go to position 1(0px)
-
-  //listen for mouseenter and pause
-  //resume on mouseleave
-});*/
+$(".hamburger-container").click(function() {
+  $(".nav").toggleClass("nav--reveal");
+});
 
 
 
@@ -38,7 +15,7 @@
 
 
 
-
+/*
 document.querySelector(".btn").addEventListener("click", calc);
   function calc() {
     var players = document.querySelector(".bowlers").value;
@@ -55,3 +32,4 @@ document.querySelector(".btn").addEventListener("click", calc);
     };
 
 };
+*/

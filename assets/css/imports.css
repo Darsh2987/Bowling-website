@@ -1,6 +1,9 @@
 @import "base/_global";
 @import "modules/_top-image-slider";
 @import "modules/_header";
+@import "modules/_hamburger";
 @import "modules/_modal";
-@import "modules/_section";
+@import "modules/_headline";
 @import "modules/_special-offer";
+@import "modules/_party";
+@import "modules/_footer";

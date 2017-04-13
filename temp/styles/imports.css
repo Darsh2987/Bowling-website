@@ -17,6 +17,10 @@ body {
   box-sizing: border-box;
 }
 
+.clearfix {
+  clear: both;
+}
+
 @-webkit-keyframes slider {
 
   0% {
@@ -144,22 +148,45 @@ body {
   background-color: rgba(0, 0, 0, .7);
   width: 100%;
   height: 70px;
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 0;
+  z-index: 2;
 }
 
 .bowling-icon__home-btn {
-  width: 50px;
+  width: 45px;
   position: relative;
-  top: 15px;
-  left: 15px;
+  top: 16px;
+  left: 20px;
+  float: left;
+}
+
+.nav {
+  cursor: pointer;
+  list-style: none;
+  border: 1px solid red;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 70px;
+  display: none;
+}
+
+.nav--reveal {
+  display: block;
+}
+
+.nav li {
+  font-family: 'Passion One', cursive;
+  line-height: 1.9rem;
+  font-size: 1.5rem;
 }
 
 .header-main {
-  font-size: 1.5rem;
   text-align: center;
-  padding: 2.5rem 1rem;
+  padding: 1.5rem 1rem;
   margin: 0 5%;
   width: 90%;
   background-color: rgba(0, 0, 0, .7);
@@ -169,19 +196,149 @@ body {
   border-radius: 10px;
 }
 
-h1 {
+.header-main h1 {
+  font-size: 2rem;
+  letter-spacing: 3px;
   font-weight: 300;
-  margin-bottom: 1.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 2px red;
+  font-family: 'Passion One', cursive;
 }
 
 .book-now {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 300;
-  background-color: rgba(228, 13, 11, .8);
+  background-color: red;
   display: inline-block;
   padding: 1rem;
   text-shadow: 1px 1px 10px #000;
   border-radius: 10px;
+}
+
+.phone-number {
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+/*-------------------------------------------------------*/
+
+/* Rules for the small screen landscape i.e. smartphones */
+
+/* Rules for the small screen landscape i.e. smartphones */
+
+@media only screen and (min-width: 415px) and (max-width: 740px) {
+  .header-main {
+    width: 50%;
+    padding: 1rem;
+    margin: 0 25%;
+    bottom: 30px;
+  }
+  .header-main h1 {
+    font-size: 4vw;
+  }
+
+  .book-now {
+    font-size: 2.5vw;
+  }
+}
+
+/* End of rules for the small screen landscape i.e. smartphones */
+
+/* End of rules for the small screen landscape i.e. smartphones */
+
+/*--------------------------------------------------------------*/
+
+/*---------------------------------------------------------*/
+
+/* Rules for medium to large screens i.e. ipads and desktop*/
+
+/* Rules for medium to large screens i.e. ipads and desktop*/
+
+@media only screen and (min-width: 741px) {
+
+  .nav {
+    list-style: none;
+    float: right;
+    position: relative;
+    top: 25px;
+    right: 60px;
+    width: auto;
+  }
+
+  .nav li {
+    float: left;
+    font-size: 1.2rem;
+    font-family: 'Passion One', cursive;
+    letter-spacing: 1px;
+    margin-left: 1rem;
+    text-shadow: 1px 1px 1px red;
+  }
+
+  .header-main {
+    width: 50%;
+    margin: 0 25%;
+  }
+
+  .header-main h1 {
+    font-size: 3.2rem;
+  }
+
+}
+
+/* Rules for medium to large screens i.e. ipads and desktop*/
+
+/* Rules for medium to large screens i.e. ipads and desktop*/
+
+/*---------------------------------------------------------*/
+
+.hamburger-container {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  float: right;
+  top: 25px;
+  right: 15px;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: block;
+}
+
+.hamburger span {
+  background-color: #fff;
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 5px;
+  position: relative;
+  top: 0;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.hamburger-container.open span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+
+.hamburger-container.open span:nth-child(1) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 11px;
+}
+
+.hamburger-container.open span:nth-child(3) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -5px;
+}
+
+@media only screen and (min-width: 741px) {
+  .hamburger-container {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .make-booking-modal {
@@ -265,30 +422,50 @@ select {
   color: #fff;
 }
 
+.special-offer__wrapper {
+  background-color: #FFF9BC;
+  background-image: url("../../assets/images/pattern-bg.png");
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  box-shadow: 1px 1px 100px -25px #000 inset;
+}
+
 .special-offer {
   width: 90%;
   height: auto;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
-.special-offer__title {
+.special-offer__headline {
   text-align: center;
-  margin: 2.5rem 0;
+  padding: 1rem;
+  margin: 0 auto 2rem auto;
+  width: 90%;
+  font-size: 2.5rem;
+  color: #000;
+  text-shadow: 1px 1px 5px #fff;
+  border-radius: 5px;
+  font-family: 'Passion One', cursive;
 }
 
 .special-offer__block {
-  width: 100%;
-  height: 300px;
+  height: 280px;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .9);
+  margin-bottom: 30px;
 }
 
 .special-offer__festival {
   background-image: url("../../assets/images/halloween.jpg");
   background-size: cover;
   background-position: center center;
-  margin-bottom: 15px;
-  border: 1px solid #f4730b;
-  box-shadow: 5px 5px 5px rgba(250, 250, 250, .2);
+}
+
+.special-offer__festival-headings-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 30px;
 }
 
 .special-offer__festival-headings {
@@ -329,27 +506,15 @@ select {
   background-image: url("../../assets/images/crown2.jpg");
   background-size: cover;
   background-position: center center;
-  box-shadow: 5px 5px 5px rgba(250, 250, 250, .2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+
 }
 
 .special-offer__kings-offer-headings-wrapper {
-  font-family: 'Lobster Two', cursive;
-  background-color: rgba(0, 0, 0, .5);
-  width: 100%;
+  width: 280px;
   margin: 0 auto;
-  padding: 1rem;
   letter-spacing: 1px;
-  text-shadow: 1px 1px 5px rgb(255, 231, 89);
-  border-radius: 10px;
+  position: relative;
+  top: 10px;
 }
 
 .special-offer__kings-offer h2 {
@@ -360,13 +525,13 @@ select {
 .kings {
   position: relative;
   top: 40px;
-  right: 45px;
+  right: 30px;
 }
 
 .offer {
   position: relative;
   top: 40px;
-  left: 100px;
+  left: 140px;
 }
 
 .special-offer__kings-offer h3 {
@@ -383,4 +548,330 @@ select {
 
 .special-offer__kings-offer h5 {
   padding-top: .9rem;
+  text-align: center;
+}
+
+.special-offer__cosmic-mayhem {
+  background-image: url("../../assets/images/cosmic-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+  padding: 1rem;
+  font-family: 'Passion One', cursive;
+  letter-spacing: 1px;
+}
+
+.special-offer__cosmic-mayhem h2 {
+  margin: .5rem 0;
+  font-size: 2.3rem;
+}
+
+.special-offer__cosmic-mayhem h3 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.special-offer__cosmic-mayhem p {
+  font-size: 1.3rem;
+}
+
+.special-offer__description {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: ;
+  text-align: center;
+  line-height: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, .5);
+  border-bottom: 1px solid rgba(0, 0, 0, .5);
+  color: #000;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/* Rules for the small screen and medium screen i.e. smartphones to ipad */
+
+/* Rules for the small screen and medium screen i.e. smartphones to ipad */
+
+@media only screen and (min-width: 381px) and (max-width: 900px) {
+
+  .special-offer__headline {
+    font-size: 2rem;
+  }
+
+  .special-offer__festival {
+    background-position: center bottom;
+  }
+
+  .special-offer__cosmic-mayhem h2 {
+    margin: .5rem 0;
+    font-size: 2.3rem;
+  }
+
+  .special-offer__cosmic-mayhem h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .special-offer__cosmic-mayhem p {
+    font-size: 1.3rem;
+  }
+
+}
+
+/* End of rules for the small screen landscape medium screen i.e. smartphones to ipad */
+
+/* End of rules for the small screen landscape medium screen i.e. smartphones to ipad */
+
+/*------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------*/
+
+/* Rules for the medium screen i.e. ipad landscape*/
+
+/* Rules for the medium screen i.e. ipad landscape*/
+
+@media only screen and (min-width: 901px) and (max-width: 1030px) {
+
+  .special-offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0rem;
+  }
+
+  .special-offer__headline {
+    font-size: 2.2rem;
+  }
+
+  .special-offer__block {
+    width: 31%;
+    height: 270px;
+    float: left;
+  }
+
+  .special-offer__festival {
+    background-position: center bottom;
+    margin-right: 30px;
+  }
+
+  .special-offer__festival-headings-wrapper {
+    width: 330px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .special-offer__festival h2 {
+    font-size: 3.5rem;
+  }
+
+  .special-offer__festival h3 {
+    font-size: 2rem;
+    top: 70px;
+  }
+
+  .special-offer__festival h4 {
+    font-size: 1.9rem;
+    top: 60px;
+  }
+
+  .special-offer__kings-offer {
+    margin-right: 30px;
+  }
+
+  .special-offer__kings-offer-headings-wrapper {
+    width: 95%;
+  }
+
+  .special-offer__kings-offer h2 {
+    font-size: 2rem;
+    position: relative;
+    bottom: 0px;
+    left: 10px;
+  }
+
+  .kings {
+    top: 40px;
+    right: 30px;
+  }
+
+  .offer {
+    top: 35px;
+    left: 115px;
+  }
+
+  .special-offer__kings-offer h3 {
+    font-size: 1.3rem;
+  }
+
+  .special-offer__kings-offer h4 {
+    font-size: 1.1rem;
+
+  }
+
+  .special-offer__kings-offer h5 {
+    padding-bottom: 10px;
+  }
+
+  .special-offer__description {
+    font-size: 1.2rem;
+  }
+
+  .special-offer__cosmic-mayhem h2 {
+    margin: .5rem 0;
+    font-size: 2.3rem;
+  }
+
+  .special-offer__cosmic-mayhem h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .special-offer__cosmic-mayhem p {
+    font-size: 1rem;
+  }
+
+
+}
+
+/* End of rules for the medium screen i.e. ipad landscape */
+
+/* End of rules for the medium screen i.e. ipad landscape */
+
+/*--------------------------------------------------------*/
+
+/*-----------------------------------------*/
+
+/* Rules for the larger screen i.e desktop */
+
+/* Rules for the larger screen i.e desktop */
+
+@media only screen and (min-width: 1031px) {
+
+  .special-offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0rem;
+  }
+
+  .special-offer__block {
+    width: 45%;
+    height: 320px;
+    float: left;
+  }
+
+  .special-offer__festival {
+    margin-right: 30px;
+  }
+
+  .special-offer__festival-headings-wrapper {
+    top: 10px;
+  }
+
+  .special-offer__kings-offer {
+    margin-right: 30px;
+  }
+
+  .special-offer__cosmic-mayhem h2 {
+    margin: .5rem 0;
+    font-size: 2.6rem;
+  }
+
+  .special-offer__cosmic-mayhem h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .special-offer__cosmic-mayhem p {
+    font-size: 1.2rem;
+  }
+}
+
+/* End of rules for the larger screen i.e desktop */
+
+/* End of rules for the larger screen i.e desktop */
+
+/*------------------------------------------------*/
+
+.party {
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  position: relative;
+  top: -16px;
+}
+
+.party__title {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.party__container {
+  background-color: #ee3d96;
+  padding-bottom: 50px;
+  box-shadow: 1px 1px 100px -25px #000 inset;
+}
+
+.party__section-header {
+  background-image: url("../../assets/images/party.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+  font-size: 2.3rem;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+  padding-top: 4rem;
+  font-family: 'Passion One', cursive;
+  letter-spacing: 1px;
+}
+
+.party__container p {
+  padding: 2rem;
+  text-align: center;
+  line-height: 1.9rem;
+  font-size: 1.1rem;
+}
+
+.party__btn {
+  background-color: #fff;
+  text-align: center;
+  color: #ee3d96;
+  width: 270px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+  border-radius: 5px;
+  font-family: 'Passion One', cursive;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.footer {
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2rem 0;
+  font-family: 'Passion One', cursive;
+  letter-spacing: 2px;
+}
+
+.copyright {
+  width: 90%;
+  margin: 50px auto 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(250, 250, 250, .5);
+  font-size: 1rem;
 }
