@@ -4,7 +4,7 @@ $(".hamburger-container").click(function() {
 });
 
 $(".hamburger-container").click(function() {
-  $(".nav").toggleClass("nav--reveal");
+  $(".nav-menu").toggleClass("nav--reveal");
 });
 
 
