@@ -26,15 +26,14 @@
   opacity: 0;
   width: 100%;
   transition: all ease-in-out .6s;
+  display: flex;
+  align-items: center;
 }
 
 .nav {
   list-style: none;
   width: 100%;
   margin: 0 auto;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .nav--reveal {
@@ -103,6 +102,12 @@
 /* Rules for the small screen landscape i.e. smartphones */
 
 @media only screen and (min-width: 415px) and (max-width: 740px) {
+
+  .nav li {
+    font-size: 2rem;
+    padding: 1.5rem 0;
+  }
+
   .header-main {
     width: 50%;
     padding: 1rem;
@@ -130,12 +135,13 @@
 
   .nav-menu {
     position: relative;
-    top: 35px;
+    top: 1px;
     right: 0px;
     left: -40px;
     bottom: 0px;
     opacity: 1;
     transition: opacity ease-in-out .6s;
+    display: block;
   }
 
   .nav {
