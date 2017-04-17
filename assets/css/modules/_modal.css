@@ -1,72 +1,212 @@
 .make-booking-modal {
-  position: absolute;
+  position: fixed;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
   visibility: hidden;
+  z-index: 5;
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+}
+
+.modal-fadein {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 1.5rem;
+  transform: scaleX(1.2);
+  transform-origin: 100% 0;
+  cursor: pointer;
 }
 
 .make-booking-container {
-  width: 600px;
-  height: 400px;
-  background-color: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px inset #fff;
+  background-color: rgba(154, 3, 30, .95);
+  box-shadow: 1px 1px 100px -25px #000 inset;
 }
 
 .make-booking {
-  width: 450px;
-
+  width: 100%;
+  position: relative;
+  top: 40px;
 }
 
-.number-of-bowlers, .number-of-games {
-  margin: 2rem;
+.number-of-bowlers, .number-of-games, .location-choice {
+  width: 85%;
+  margin: 0 auto;
   padding: 1rem 1rem 1.4rem 1rem;
-  background-color: rgba(250, 250, 250, .1);
+  background-color: rgba(76, 1, 15, .5);
   color: #fff;
 }
 
 label {
   position: relative;
   top: 4px;
+  font-size: .9rem;
 }
 
 select {
   float: right;
   margin-left: 1.5rem;
   padding-left: .5rem;
-  width: 60px;
+  width: 100px;
   height: 25px;
+  border: none;
+  border-radius: 0;
+  appearence: none
+}
+
+.adult-bowlers, .junior-bowlers, .games {
+  width: 80px;
+}
+
+.submit {
+  width: 85%;
+  margin: 15px auto 0 auto;
 }
 
 .btn {
-  border: 1px solid #fff;
+  width: 100%;
+  border: none;
   color: #fff;
-  background-color: #000;
-  width: 385px;
+  background-color: rgba(76, 1, 15, .6);
   height: 45px;
-  margin-left: 2rem;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -0-appearance: none;
-  -ms-appearance: none;
   appearence: none;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -o-border-radius: 0px;
-  -ms-border-radius: 0px;
   border-radius: 0px;
+  cursor: pointer;
 }
 
 .booking-info {
   height: 60px;
-  margin: 2rem;
+  margin: 2rem auto;
   color: #fff;
+  text-align: center;
+  border-top: 1px solid rgba(250, 250, 250, .5);
+  border-bottom: 1px solid rgba(250, 250, 250, .5);
+  padding-top: 10px;
+  width: 85%;
 }
+
+
+
+/*-------------------------------------------------------*/
+/* Rules for the small screen landscape i.e. smartphones */
+/* Rules for the small screen landscape i.e. smartphones */
+
+@media only screen and (min-width: 560px) and (max-width: 740px) {
+
+  .make-booking-container {
+  text-align: center;
+  }
+
+  .make-booking {
+    width: 90%;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+  }
+
+  .location-choice, .number-of-bowlers, .number-of-games {
+    width: 50%;
+    padding: 1rem 1rem 1rem 1rem;
+    float: left;
+  }
+
+  label {
+    font-size: .8rem;
+  }
+
+  .submit {
+    width: 100%;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+
+  .booking-info {
+    height: 60px;
+    margin: 1rem 0;
+    color: #fff;
+    text-align: center;
+    border-top: 1px solid rgba(250, 250, 250, .5);
+    border-bottom: 1px solid rgba(250, 250, 250, .5);
+    padding-top: 20px;
+    width: 100%;
+  }
+}
+
+/* End of rules for the small screen landscape i.e. smartphones */
+/* End of rules for the small screen landscape i.e. smartphones */
+/*--------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------*/
+/* Rules for medium to large screens i.e. ipads and desktop*/
+/* Rules for medium to large screens i.e. ipads and desktop*/
+
+@media only screen and (min-width: 741px) {
+
+  .make-booking {
+    width: 450px;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+  }
+
+  .location-choice, .number-of-bowlers, .number-of-games {
+    width: 100%;
+    padding: 1rem 1rem 1.4rem 1rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  .submit {
+    width: 100%;
+  }
+
+  .btn {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  .booking-info {
+    height: 60px;
+    margin: 1rem 0;
+    color: #fff;
+    text-align: center;
+    border-top: 1px solid rgba(250, 250, 250, .5);
+    border-bottom: 1px solid rgba(250, 250, 250, .5);
+    padding-top: 20px;
+    width: 100%;
+  }
+
+
+}
+
+/* Rules for medium to large screens i.e. ipads and desktop*/
+/* Rules for medium to large screens i.e. ipads and desktop*/
+/*---------------------------------------------------------*/

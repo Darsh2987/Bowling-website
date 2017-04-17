@@ -20,7 +20,7 @@
 
     <body>
 
-      <!-- Markup for background image slider with top header bar and main header block -->
+      <!-- MARKUP FOR BACKGROUND IMAGE SLIDER WITH TOP HEADER BAR AND MAIN HEADER BLOCK -->
       <section class="slider-header__wrapper">
         <div class="top-image-slider">
           <div class="slides">
@@ -32,18 +32,17 @@
           </div>
 
           <header class="header-bar">
-            <img class="bowling-icon__home-btn" src="assets/images/bowling-icon.png" alt="">
+            <a href="#"><img class="bowling-icon__home-btn" src="assets/images/bowling-icon.png" alt=""></a>
             <div class="nav-menu">
               <ul class="nav">
-                <li>LOCATIONS</li>
-                <li>SPECIAL OFFERS</li>
-                <li>PARTY BOOKINGS</li>
-                <li>FOOD &amp; DRINK</li>
-                <li>CONTACT</li>
+                <li><a href="#specialOffer">SPECIAL OFFERS</a></li>
+                <li><a href="#party">PARTY BOOKINGS</a></li>
+                <li><a href="">FOOD &amp; DRINK</a></li>
+                <li><a href="">CONTACT</a></li>
               </ul>
             </div>
 
-            <!-- for rules refer to _hamburger.css file -->
+            <!-- FOR RULES REFER TO _hamburger.css FILE -->
             <div class="hamburger-container">
               <div class="hamburger">
                 <span>&nbsp;</span>
@@ -51,7 +50,7 @@
                 <span>&nbsp;</span>
               </div>
             </div>
-            <!-- for rules refer to _hamburger.css file -->
+            <!-- FOR RULES REFER TO _hamburger.css FILE -->
           </header>
 
           <section class="header-main">
@@ -62,11 +61,16 @@
           </section>
         </div>
       </section>
-      <!-- End of markup for background image slider with top header bar and main header block -->
+      <!-- END OF MARKUP FOR BACKGROUND IMAGE SLIDER WITH TOP HEADER BAR AND MAIN HEADER BLOCK -->
 
 
-      <!-- Markup for the "special offers" section -->
-      <div class="special-offer__wrapper">
+      <!-- MARKUP FOR LOCATION'S SECTION -->
+
+      <!-- END OF MARKUP FOR LOCATION'S SECTION -->
+
+
+      <!-- MARKUP FOR THE SPECIAL OFFER SECTION -->
+      <div id="specialOffer" class="special-offer__wrapper">
         <div class="special-offer__headline-container">
           <h1 class="special-offer__headline">SPECIAL OFFERS!</h1>
         </div>
@@ -78,6 +82,7 @@
               <h2 class="special-offer__festival-headings">HALLOWEEN</h2>
               <h3 class="special-offer__festival-headings">SPECIAL OFFER</h3>
               <h4 class="special-offer__festival-headings">2 games for the price of 1</h4>
+              <h5>Terms and conditions apply</h5>
             </div>
           </div>
 
@@ -98,6 +103,7 @@
               <p>Awesome Music Videos</p>
               <p>Phenomenal Fog Machine</p>
               <p>Wicked Glowing Pins &amp; Bowling Balls</p>
+              <h5>Terms and conditions apply</h5>
             </div>
           </div>
 
@@ -107,18 +113,18 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure iusto est similique cumque error eveniet neque sequi unde, odit inventore qui omnis fuga libero asperiores, deserunt voluptatem maxime labore temporibus. </p>
         </div>
       </div>
-      <!-- End of markup for the "special offers" section -->
+      <!-- END OF MARKUP FOR THE SPECIAL OFFER SECTION -->
 
 
-      <!-- Markup for clear fix -->
+      <!-- MARKUP FOR CLEAR FIX -->
 
       <div class="clearfix"></div>
 
-      <!-- End of markup for clear fix -->
+      <!-- END OF MARKUP FOR CLEAR FIX -->
 
 
-      <!-- Markup for the "party" section -->
-      <section class="party">
+      <!-- MARKUP FOR PARTY SECTION -->
+      <section id="party" class="party">
         <div class="party__container">
           <h2 class="party__section-header">LET'S GET THIS PARTY STARTED!</h2>
           <p>Bowling is best when it’s played in a group or as part of a bowling party. For whatever occasion, Whether you just fancy a great night out with friends, the ultimate kids birthday party. Looking for a fun team building event or just some quality fun family time. We've got the perfect party package for you. Take a look...</p>
@@ -127,8 +133,10 @@
           </div>
         </div>
       </section>
-      <!-- End of markup for the "party" section -->
+      <!-- END OF MARKUP FOR PARTY SECTION -->
 
+
+      <!-- MARKUP FOR FOOTER SECTION -->
       <footer class="footer">
         <ul>
           <li>SIGNUP</li>
@@ -141,17 +149,44 @@
 
         <div class="copyright">© 2017 - DARSHAN PATEL</div>
       </footer>
+      <!-- END OF MARKUP FOR FOOTER SECTION -->
 
 
 
       <!-- Markup for the modal "Make Booking" -->
-      <!--<section class="make-booking-modal">
+      <section class="make-booking-modal">
         <div class="make-booking-container">
           <div class="make-booking">
 
+            <div class="location-choice">
+              <label for="location">Location</label>
+              <select class="location" name="location">
+                <option value="Acton">Acton</option>
+                <option value="Camden">Camden</option>
+                <option value="Leyton">Leyton</option>
+                <option value="Oxford Circus">Oxford Circus</option>
+                <option value="Putney">Putney</option>
+                <option value="Wembley">Wembley</option>
+              </select>
+            </div>
+
             <div class="number-of-bowlers">
-              <label for="bowlers">Bowlers</label>
-              <select class="bowlers" name="bowlers">
+              <label for="bowlers">Adult Bowlers</label>
+              <select class="adult-bowlers" name="bowlers">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </div>
+
+            <div class="number-of-bowlers">
+              <label for="bowlers">Junior Bowlers</label>
+              <select class="junior-bowlers" name="bowlers">
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -179,8 +214,9 @@
             </div>
 
           </div>
+          <div class="modal__close">X</div>
         </div>
-      </section>-->
+      </section>
       <!-- End of markup for the modal "Make Booking" -->
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>

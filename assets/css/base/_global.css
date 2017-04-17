@@ -20,3 +20,12 @@ body {
 .clearfix {
   clear: both;
 }
+
+* a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn--scale {
+  transform: scale(.8);
+}
