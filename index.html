@@ -14,6 +14,7 @@
 
       <title>Strike Tenpin Bowling</title>
 
+      <link rel="stylesheet" type="text/css" href="assets/timepicker/jquery.timepicker.css" />
       <link rel="stylesheet" href="temp/styles/imports.css">
 
     </head>
@@ -35,10 +36,10 @@
             <a href="#"><img class="bowling-icon__home-btn" src="assets/images/bowling-icon.png" alt=""></a>
             <div class="nav-menu">
               <ul class="nav">
-                <li><a href="#specialOffer">SPECIAL OFFERS</a></li>
-                <li><a href="#party">PARTY BOOKINGS</a></li>
-                <li><a href="">FOOD &amp; DRINK</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="#specialOffer" class="nav-item">SPECIAL OFFERS</a></li>
+                <li><a href="#party" class="nav-item">PARTY BOOKINGS</a></li>
+                <li><a href="" class="nav-item">FOOD &amp; DRINK</a></li>
+                <li><a href="" class="nav-item">CONTACT</a></li>
               </ul>
             </div>
 
@@ -62,11 +63,6 @@
         </div>
       </section>
       <!-- END OF MARKUP FOR BACKGROUND IMAGE SLIDER WITH TOP HEADER BAR AND MAIN HEADER BLOCK -->
-
-
-      <!-- MARKUP FOR LOCATION'S SECTION -->
-
-      <!-- END OF MARKUP FOR LOCATION'S SECTION -->
 
 
       <!-- MARKUP FOR THE SPECIAL OFFER SECTION -->
@@ -153,7 +149,7 @@
 
 
 
-      <!-- Markup for the modal "Make Booking" -->
+      <!-- MARKUP FOR MODAL "Make Booking" -->
       <section class="make-booking-modal">
         <div class="make-booking-container">
           <div class="make-booking">
@@ -170,7 +166,17 @@
               </select>
             </div>
 
-            <div class="number-of-bowlers">
+            <div class="date">
+              <label for="date">Date</label>
+              <input type="date" name="date">
+            </div>
+
+            <div class="time-picker">
+              <label for="time">Time</label>
+              <input id="time" class="time" type="text"></input>
+            </div>
+
+            <div class="number-of-bowlers number-of-adult-bowlers">
               <label for="bowlers">Adult Bowlers</label>
               <select class="adult-bowlers" name="bowlers">
                 <option value="0">0</option>
@@ -213,14 +219,19 @@
               <p class="totalPrice"></p>
             </div>
 
+            <div class="confirm">
+              <h2>CONFIRM</h2>
+            </div>
+
           </div>
           <div class="modal__close">X</div>
         </div>
       </section>
-      <!-- End of markup for the modal "Make Booking" -->
+      <!-- END OF MARKUP FOR MODAL "Make Booking" -->
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
       <script type="text/javascript" src="assets/js/main.js" charset="UTF-8"></script>
+      <script type="text/javascript" src="assets/timepicker/jquery.timepicker.js"></script>
     </body>
 
   </html>
