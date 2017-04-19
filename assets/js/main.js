@@ -76,14 +76,16 @@ $(function() {
 });
 
 
+
+var adult = document.querySelector(".adult-bowlers");
+var juniors = document.querySelector(".junior-bowlers");
+var games = document.querySelector(".games");
+
 document.querySelector(".btn").addEventListener("click", calc);
   function calc() {
-    var adult = document.querySelector(".adult-bowlers").value;
-    var juniors = document.querySelector(".junior-bowlers").value;
-    var games = document.querySelector(".games").value;
-    var totalPrice = ((adult * 8 + juniors * 4) * games);
+    var totalPrice = ((adult.value * 8 + juniors.value * 4) * games.value);
 
-    if (adult == 0 && juniors == 0) {
+    if (adult.value == 0 && juniors.value == 0) {
       alert("Please select an option for either Adult Bowlers and or Junior Bowlers");
     } else {
       document.querySelector(".totalPrice").textContent = "The total cost for your booking is " + "£" + totalPrice;
@@ -92,12 +94,11 @@ document.querySelector(".btn").addEventListener("click", calc);
 
 document.querySelector(".confirm").addEventListener("click", confirm);
   function confirm() {
-    var adult = document.querySelector(".adult-bowlers").value;
-    var juniors = document.querySelector(".junior-bowlers").value;
-    if (adult == 0 && juniors == 0) {
+
+    if (adult.value == 0 && juniors.value == 0) {
       alert('You must select at least one player for adults or junior. Be sure to click "Get Price" to get a quote for your booking before confirming.');
     } else {
-      alert("Thank you. Your booking has been processed, you will recieve a confirmation email sortly. Please present this email when you arrive.")
+      alert("Thank you. Your booking has been processed, you will recieve a confirmation email sortly. Please present this email when you arrive.");
     }
   };
 
